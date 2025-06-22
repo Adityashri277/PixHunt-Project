@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background: linear-gradient(
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+overflow-y: auto;
+  /* justify-content: top; */
+  /* row-gap: 20px; */
+  align-items: center;
+  
+}
+.heading {
+  text-shadow: 0 -1px 4px #fff, 0 -2px 10px #ff0, 0 -10px 20px #ff8000,
+    0 -18px 40px #f00;
+  color: #ffffff;
+  margin-top: 50px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: x-large
+}
+.searchcont{
+    display: flex;
+    margin-top: 40px;
+    height: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#search {
+  border-top-left-radius: 8px ;
+    border-bottom-left-radius: 8px;
+  height: 50px;
+  width: 400px;
+  background-color: rgb(155, 153, 153);
+  text-align: center;
+  /* align-items: center;
+  flex-direction: row;
+  justify-content: center; */
+}
+.box:hover {
+  border: none;
+  box-shadow: 0px 0px 10px white;
+  transition: all 0.5s ease-in-out;
+  border-radius: 8px;
+}
+
+
+.searchcont {
+display: flex;
+flex-direction: column;
+}
+.menu{
+  height: 70px;
+  width: 100%;
+   padding-bottom:20px ;
+  margin-top: 30px;
+}
+@media (max-width:700px){
+  .menu{
+    display: flex;
+    /* margin-top: 270px; */
+    flex-direction: column;
+    margin-bottom: 65px;
+    width: 120px;
+    height: 320px;
+    row-gap: 10px;
+    
+  }
+ .box{
+  width: 320px
+  
+ }
+ .searchcont{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  height: auto;
+ }
+ #search{
+
+  width: 250px;
+ }
+ #searchbox{
+  width: 100px;
+  padding-left: 20px;
+ }
+ #searchbtn{
+  width: 50px;
+ }
+
+ 
+}
+.searchtype{
+    background-color: rgb(137, 82, 144);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  margin: 5px;
+  font-size: medium;
+  cursor: pointer;
+  border: 1px solid rgb(95, 93, 93);
+  font-family: "Times New Roman", Times, serif;
+  transition: all 0.5s ease-in-out;
+
+}
+.searchtype:hover{
+    border: none;
+  box-shadow: 0px 0px 10px white;
+  transition: all 0.5s ease-in-out;
+  border-radius: 8px;
+}
+.box{
+  display: flex;
+  flex-direction: row;
+}
+#searchbox {
+  height: 50px;
+  outline: none;
+  width: 320px;
+  background-color: transparent;
+  font-size: medium;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  /* border-left: 1px solid rgb(199, 197, 197); */
+  /* border-right: none; */
+  color: white;
+  /* cursor: text; */
+  border: none;
+}
+::placeholder {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+  font-style: italic;
+}
+
+#searchbtn {
+  height: 50px;
+  width: 100px;
+  background-color: rgb(179, 49, 49);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: white;
+  font-size: medium;
+  cursor: pointer;
+  border: none;
+  font-family: "Times New Roman", Times, serif;
+  transition: all 0.5s ease-in-out;
+}
+#showmorebtn {
+  background-color: rgb(179, 49, 49);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: medium;
+  cursor: pointer;
+  border: 1px solid rgb(95, 93, 93);
+  font-family: "Times New Roman", Times, serif;
+  transition: all 0.5s ease-in-out;
+  display: none;
+  /* margin-bottom: 100px;; */
+  /* gap: 20px; */
+  
+
+}
+
+
+.searchresult {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 100px auto 50px;
+  width: 80%;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+.searchresult img:hover{
+transform: scale(1.05);
+    box-shadow: 0px 0px 10px pink;
+  transition: all 0.5s ease-in-out;
+}
+@media (max-width:1000px) {
+    .searchresult{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+@media (max-width:700px) {
+    .searchresult{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+.searchresult img {
+  width: 100%;
+  height: 300px;
+  /* object-fit:fill; */
+  border-radius: 5px;
+}
+.showmorebox{
+    padding-bottom: 50px;
+    padding-top: 25px;
+}

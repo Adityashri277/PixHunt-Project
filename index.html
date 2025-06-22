@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PixHunt</title>
+    <link
+      rel="shortcut icon"
+      href="/Projects/Js Project-2/images.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="heading"><h1>PixHunt</h1></div>
+    <div class="searchcont">
+      <div class="menu">
+        <button id="forest" class="searchtype">Forest</button>
+        <button id="wildlife" class="searchtype">WildLife</button>
+        <button id="skyscraper" class="searchtype">Skyscraper</button>
+        <button id="minimal" class="searchtype">Minimal</button>
+        <button id="animals" class="searchtype">Animals</button>
+        <button id="travel" class="searchtype">Travel</button>
+      </div>
+      <div class="box">
+        <form id="search">
+          <input
+            id="searchbox"
+            type="text"
+            placeholder=" Search for images here"
+          />
+        </form>
+        <button id="searchbtn">Search</button>
+      </div>
+    </div>
+
+    <div class="searchresult"></div>
+    <div class="showmorebox"><button id="showmorebtn">Show More</button></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
