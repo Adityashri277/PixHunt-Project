@@ -1,5 +1,6 @@
 const searchbox = document.querySelector("#searchbox");
 const searchbtn = document.querySelector("#searchbtn");
+const searchform = document.querySelector("#search");
 const searchresult = document.querySelector(".searchresult");
 const showmorebtn = document.querySelector("#showmorebtn");
 const Forestbtn = document.querySelector("#forest");
@@ -8,7 +9,7 @@ const skyscraperbtn = document.querySelector("#skyscraper");
 const animalsbtn = document.querySelector("#animals");
 const minimalbtn = document.querySelector("#minimal");
 const travelbtn = document.querySelector("#travel");
-const search = document.querySelector("#searchbtn");
+
 let keyword = "";
 let page = 1;
 const accesskey = "I1HZqPHUuFsfB0VQ5FLw5adawZ62_LhyJkFZTZP59ms";
@@ -36,7 +37,7 @@ async function searchImages() {
     showmorebtn.style.display = "block";
 }
 
-search.addEventListener("submit", (e) => { // search is the id of form
+searchform.addEventListener("submit", (e) => { 
     e.preventDefault();
     searchImages();
 });
@@ -71,7 +72,7 @@ wildlifebtn.addEventListener("click", () => {
     page = 1;
     searchImages();
 })
-search.addEventListener("click", (e) => {
+searchbtn.addEventListener("click", (e) => {
     e.preventDefault();
     searchImages();
 });
